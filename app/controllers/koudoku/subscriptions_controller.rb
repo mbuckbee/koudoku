@@ -119,7 +119,7 @@ module Koudoku
 
     private
     def subscription_params
-      params.require(:subscription).permit(:plan_id, :stripe_id, :current_price, :credit_card_token, :card_type, :last_four)
+      params[:subscription]
     end
   end
 end
